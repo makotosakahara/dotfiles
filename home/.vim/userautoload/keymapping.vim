@@ -11,6 +11,8 @@ nnoremap sv :<C-u>vs<CR>
 " Switch to the next or previous buffer
 nnoremap <silent>bp :bprevious<CR>
 nnoremap <silent>bn :bnext<CR>
+" Kill current buffer
+command Q bdelete
 " ------------------------------
 " vimfiler
 " NOTE: In order to avoid key mapping conflict,
