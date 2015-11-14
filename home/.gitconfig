@@ -1,0 +1,7 @@
+[push]
+    default = simple
+[user]
+    name = makotosakahara
+    email = makoto.sakahara@gmail.com
+[core]
+    excludesfile = ~/.gitignore
