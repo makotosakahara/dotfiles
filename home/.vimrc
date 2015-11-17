@@ -32,11 +32,13 @@ NeoBundleLazy 'Shougo/vimshell.vim', {
 \}
 " ------------------------------
 " Runner
-NeoBundleLazy 'thinca/vim-quickrun', {
-\   'autoload': {
-\       'filetypes': ['python', 'tex'],
-\   }
-\}
+NeoBundle 'thinca/vim-quickrun'
+" FIXME: Python can't load module:(
+"NeoBundleLazy 'thinca/vim-quickrun', {
+"\   'autoload': {
+"\       'filetypes': ['python', 'tex'],
+"\   }
+"\}
 " ------------------------------
 " Edit
 if has('lua')
