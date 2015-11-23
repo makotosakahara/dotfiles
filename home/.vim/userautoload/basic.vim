@@ -49,3 +49,5 @@ set smartcase
 set incsearch
 set hlsearch
 " ------------------------------
+" Filetype
+let g:tex_flavor = "latex"
