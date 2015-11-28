@@ -5,12 +5,12 @@ let g:quickrun_config = {}
 let g:quickrun_config._ = {
 \   'runner': 'vimproc',
 \   'runner/vimproc/updatetime': 10,
-\   'outputter/buffer/running_mark': "Running...",
+\   'outputter/buffer/running_mark': 'Running...',
 \   'outputter/buffer/split': ':botright 12sp',
 \   'outputter/buffer/close_on_empty': 1,
-\   'hook/time/enable': 1,
-\   'hook/time/format': "\nFinished in %gsec"
 \}
+"\   'hook/time/enable': 1,
+"\   'hook/time/format': '\nFinished in %gsec'
 " TODO Build script
 function! s:StopQuickRun()
     if quickrun#is_running()
