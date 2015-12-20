@@ -17,3 +17,7 @@
 floatX = float32
 device = cpu
 allow_gc = False
+
+# Excluding OSX
+#[blas]
+#ldflags = -lmkl_rt
