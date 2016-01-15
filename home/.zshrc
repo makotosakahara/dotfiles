@@ -4,6 +4,7 @@ case "${OSTYPE}" in
         if [[ -d /Applications/MacVim.app ]]; then
             alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
             alias vi=vim
+            export EDITOR=vim
         fi
         ;;
 
@@ -11,28 +12,19 @@ case "${OSTYPE}" in
         ;;
 esac
 # ============================================================
-export LANG=ja_JP.UTF-8
-export LC_ALL=ja_JP.UTF-8
-export EDITOR=vim
-# ============================================================
 setopt prompt_subst
 autoload colors
 colors
 
-case ${UID} in
-    0)  # root
-        PROMPT="%B%{$fg[red]%}%~%{$reset_color%}[%n@%M]$%b "
-        PROMPT2="%B%_>%b "
-        SPROMPT="%B%r is correct? [n,y,a,e]:%b "
-        RPROMPT="%B%{$fg[red]%}%D %*%{$reset_color%}%b"
-        ;;
-    *)
-        PROMPT="%{$fg[magenta]%}%~%{$reset_color%}[%n]$ "
-        PROMPT2="%_> "
-        SPROMPT="%r is correct? [n,y,a,e]: "
-        RPROMPT="%{$fg[cyan]%}%D %*%{$reset_color%}"
-        ;;
-esac
+local current_dir="%{$fg[magenta]%}[%~]%{$reset_color%}"$'\n'
+local user="%{$fg[green]%}%n%{$reset_color%}"
+local host="%{$fg[blue]%}%m%{$reset_color%}"
+local mark="%{$fg[yellow]%}%(!,#,$)%{$reset_color%}"
+
+PROMPT="$current_dir$user%{$fg[yellow]%}@%{$reset_color%}$host $mark "
+PROMPT2="%_%(!,#,$) "
+SPROMPT="%r is correct? [n,y,a,e]: "
+RPROMPT="%{$fg[cyan]%}%D %*%{$reset_color%}"
 # ============================================================
 # Command History
 HISTFILE=~/.zsh_history
@@ -40,7 +32,7 @@ HISTSIZE=4096
 SAVEHIST=4096
 
 setopt hist_ignore_dups
-setopt hist_ignore_all_dups 
+setopt hist_ignore_all_dups
 setopt share_history
 setopt append_history
 
@@ -79,4 +71,3 @@ setopt nolistbeep
 
 # Notify background job
 setopt notify
-
