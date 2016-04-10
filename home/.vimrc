@@ -33,12 +33,6 @@ NeoBundleLazy 'Shougo/vimshell.vim', {
 " ------------------------------
 " Runner
 NeoBundle 'thinca/vim-quickrun'
-" FIXME: Python can't load module:(
-"NeoBundleLazy 'thinca/vim-quickrun', {
-"\   'autoload': {
-"\       'filetypes': ['python', 'tex'],
-"\   }
-"\}
 " ------------------------------
 " Edit
 if has('lua')
@@ -73,21 +67,21 @@ end
 NeoBundle 'tpope/vim-fugitive'
 " ------------------------------
 " Python
-NeoBundleLazy 'davidhalter/jedi-vim', {
-\   'autoload': {
-\       'filetypes': ['python'],
-\   }
-\}
-NeoBundleLazy 'tell-k/vim-autopep8', {
-\   'autoload': {
-\       'filetypes': ['python'],
-\   }
-\}
-NeoBundleLazy 'tmhedberg/SimpylFold', {
-\   'autoload': {
-\       'filetypes': ['python'],
-\   }
-\}
+"NeoBundleLazy 'davidhalter/jedi-vim', {
+"\   'autoload': {
+"\       'filetypes': ['python'],
+"\   }
+"\}
+"NeoBundleLazy 'tell-k/vim-autopep8', {
+"\   'autoload': {
+"\       'filetypes': ['python'],
+"\   }
+"\}
+"NeoBundleLazy 'tmhedberg/SimpylFold', {
+"\   'autoload': {
+"\       'filetypes': ['python'],
+"\   }
+"\}
 " ------------------------------
 call neobundle#end()
 filetype plugin indent on
