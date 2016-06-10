@@ -2,15 +2,14 @@
 #[global]
 #floatX = float32
 #device = gpu0
-#allow_gc = True
+#allow_gc = False
 #optimizer_including = cudnn
 #
 #[nvcc]
 #fastmath = True
 #
 #[lib]
-#cnmem = 0.9
-
+#cnmem = 0.95
 
 # For CPU.
 [global]
