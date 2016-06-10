@@ -2,7 +2,7 @@
 #[global]
 #floatX = float32
 #device = gpu0
-#allow_gc = False
+#allow_gc = True
 #optimizer_including = cudnn
 #
 #[nvcc]
