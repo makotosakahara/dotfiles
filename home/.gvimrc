@@ -8,3 +8,4 @@ else
 endif
 
 set guifont=Myrica\ Monospace\ Plus\ Nerd\ File\ Types:h18
+"set guifont=Anonymous\ Pro:h16
