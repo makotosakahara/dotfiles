@@ -1,5 +1,4 @@
-set background=dark
-colorscheme base16-default
+colorscheme base16-default-dark
 
 if has('win32')
     set transparency=240
@@ -8,4 +7,3 @@ else
 endif
 
 set guifont=Myrica\ Monospace\ Plus\ Nerd\ File\ Types:h18
-"set guifont=Anonymous\ Pro:h16
