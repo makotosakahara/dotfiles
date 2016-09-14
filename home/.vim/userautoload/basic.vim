@@ -1,5 +1,7 @@
 " ------------------------------
-set encoding=utf8
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
 set t_Co=256
 " ------------------------------
 " Display
