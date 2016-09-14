@@ -66,6 +66,13 @@ end
 " Git
 NeoBundle 'tpope/vim-fugitive'
 " ------------------------------
+" LaTeX
+NeoBundleLazy 'lervag/vimtex', {
+\   'autoload': {
+\       'filetypes': ['tex'],
+\   }
+\}
+" ------------------------------
 " Python
 "NeoBundleLazy 'davidhalter/jedi-vim', {
 "\   'autoload': {
@@ -89,3 +96,4 @@ syntax enable
 NeoBundleCheck
 
 runtime! userautoload/*.vim
+
