@@ -38,4 +38,3 @@ let g:quickrun_config.tex = {
 \   'exec': '%c %o %s',
 \}
 let g:tex_conceal = ""
-"endfunction
