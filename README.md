@@ -1,1 +1,1 @@
-ζ'ヮ')ζ＜My dotfiles
+(・8・)＜My dotfiles
