@@ -8,9 +8,9 @@ function! s:hooks.on_source(bundle)
     let g:latex_fold_enabled = 1
     " Auto compiling using latexmk.
     let g:latex_latexmk_enabled = 1
-    " let g:latex_latexmk_options = '-pdfdvi'
-    " let g:latex_latexmk_continuous = 1
-    " let g:latex_latexmk_background = 1
+    let g:latex_latexmk_options = '-pdfdvi'
+    let g:latex_latexmk_continuous = 1
+    let g:latex_latexmk_background = 1
     " neocomplete.
     if !exists('g:neocomplete#sources#omni#input_patterns')
         let g:neocomplete#sources#omni#input_patterns = {}
