@@ -61,6 +61,7 @@ NeoBundle 'ryanoasis/vim-devicons', {
 " Theme
 if has('gui_running')
     NeoBundle 'chriskempson/base16-vim'
+    NeoBundle 'joshdick/onedark.vim'
 end
 " ------------------------------
 " Git
