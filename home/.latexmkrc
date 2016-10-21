@@ -10,4 +10,5 @@ $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
 $ps2pdf = 'ps2pdf %O %S %D';
 $pdf_mode = 3;  # Use dvipdfmx
 $pvc_view_file_via_temporary = 0;
-$pdf_previewer = 'open -ga /Applications/Preview.app';
+$pdf_previewer = 'open -ga /Applications/Skim.app';
+#$pdf_previewer = 'open -ga /Applications/Preview.app';

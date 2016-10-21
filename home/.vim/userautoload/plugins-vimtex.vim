@@ -11,6 +11,9 @@ function! s:hooks.on_source(bundle)
     let g:latex_latexmk_options = '-pdfdvi'
     let g:latex_latexmk_continuous = 1
     let g:latex_latexmk_background = 1
+    " Viewer
+    let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+    let g:vimtex_view_general_options = '-r @line @pdf @tex'
     " neocomplete.
     if !exists('g:neocomplete#sources#omni#input_patterns')
         let g:neocomplete#sources#omni#input_patterns = {}
@@ -26,5 +29,24 @@ function! s:hooks.on_source(bundle)
     \ . '|includepdf%(\s*\[[^]]*\])?\s*\{[^}]*'
     \ . '|includestandalone%(\s*\[[^]]*\])?\s*\{[^}]*'
     \ . ')'
+    " Update Skim after compilation
+    let g:vimtex_latexmk_callback_hooks = ['UpdateSkim']
+    function! UpdateSkim(status)
+        if !a:status | return | endif
+
+        let l:out = b:vimtex.out()
+        let l:tex = expand('%:p')
+        let l:cmd = [g:vimtex_view_general_viewer, '-r']
+        if !empty(system('pgrep Skim'))
+            call extend(l:cmd, ['-g'])
+        endif
+        if has('nvim')
+            call jobstart(l:cmd + [line('.'), l:out, l:tex])
+        elseif has('job')
+            call job_start(l:cmd + [line('.'), l:out, l:tex])
+        else
+            call system(join(l:cmd + [line('.'), shellescape(l:out), shellescape(l:tex)], ' '))
+        endif
+    endfunction
 endfunction
 
