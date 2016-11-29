@@ -1,22 +1,21 @@
 # For GPU.
-#[global]
-#floatX = float32
-#device = gpu0
-#allow_gc = True
-#optimizer_including = cudnn
-#
-#[nvcc]
-#fastmath = True
-#
-#[lib]
-#cnmem = 0.95
-
-# For CPU.
 [global]
 floatX = float32
-device = cpu
-allow_gc = False
+device = gpu0
+allow_gc = True
+optimizer_including = cudnn
+[nvcc]
+fastmath = True
+[lib]
+cnmem = 0.95
 
 # Excluding OSX
 #[blas]
 #ldflags = -lmkl_rt
+
+# For CPU.
+#[global]
+#floatX = float32
+#device = cpu
+#allow_gc = False
+
