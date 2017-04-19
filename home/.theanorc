@@ -1,7 +1,7 @@
 # For GPU.
 [global]
 floatX = float32
-device = gpu0
+device = cuda0
 allow_gc = True
 optimizer_including = cudnn
 [nvcc]
