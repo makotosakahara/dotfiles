@@ -8,7 +8,7 @@ else
     set transparency=5
 endif
 
-"set guifont=Myrica\ Monospace\ Plus\ Nerd\ File\ Types:h18
+set guifont=Myrica\ Monospace\ Plus\ Nerd\ File\ Types:h18
 
-set guifont=Source\ Code\ Pro\ Light:h17
-set linespace=-4
+"set guifont=Source\ Code\ Pro\ Light:h17
+"set linespace=-4
