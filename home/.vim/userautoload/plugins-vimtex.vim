@@ -11,6 +11,8 @@ function! s:hooks.on_source(bundle)
     let g:latex_latexmk_options = '-pdfdvi'
     let g:latex_latexmk_continuous = 1
     let g:latex_latexmk_background = 1
+    " Disable all warnings
+    let g:vimtex_quickfix_latexlog = {'default' : 0}
     " Viewer
     let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
     let g:vimtex_view_general_options = '-r @line @pdf @tex'
