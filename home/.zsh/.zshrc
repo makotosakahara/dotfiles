@@ -1,17 +1,4 @@
 # ============================================================
-case "${OSTYPE}" in
-    darwin*)
-        if [[ -d /Applications/MacVim.app ]]; then
-            alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-            alias vi=vim
-            export EDITOR=vim
-        fi
-        ;;
-
-    *) 
-        ;;
-esac
-# ============================================================
 setopt prompt_subst
 autoload colors
 colors
@@ -42,18 +29,6 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 # ============================================================
-# Alias
-case "${OSTYPE}" in
-    freebsd*|darwin*)
-        alias la="ls -al -G -F"
-        alias ls="ls -G"
-        ;;
-    linux*)
-        alias la="ls -al --color=auto -F"
-        alias ls="ls --color=auto"
-        ;;
-esac
-# ============================================================
 # Other Settings
 setopt nobeep
 
@@ -72,17 +47,8 @@ setopt nolistbeep
 # Notify background job
 setopt notify
 # ============================================================
+# Aliases
+source ${ZDOTDIR}/.zshaliases
+# ============================================================
 # peco
-function exists { which $1 &> /dev/null }
-
-if exists peco; then
-    function peco_select_history() {
-        local tac
-        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
-        BUFFER=$(fc -l -n 1 | eval $tac | peco --query "$LBUFFER")
-        CURSOR=$#BUFFER         # move cursor
-        zle -R -c               # refresh
-    }
-    zle -N peco_select_history
-    bindkey '^R' peco_select_history
-fi
+source ${ZDOTDIR}/.zshpeco
