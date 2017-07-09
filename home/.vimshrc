@@ -1,2 +1,0 @@
-alias la="ls -al -G -F"
-alias ls="ls -G"
