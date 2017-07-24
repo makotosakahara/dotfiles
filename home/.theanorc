@@ -9,13 +9,9 @@ fastmath = True
 [lib]
 cnmem = 0.95
 
-# Excluding OSX
-#[blas]
-#ldflags = -lmkl_rt
-
 # For CPU.
-#[global]
-#floatX = float32
-#device = cpu
-#allow_gc = False
+# [global]
+# floatX = float32
+# device = cpu
+# allow_gc = False
 
