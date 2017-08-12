@@ -51,4 +51,8 @@ setopt notify
 source ${ZDOTDIR}/.zshaliases
 # ============================================================
 # peco
-source ${ZDOTDIR}/.zshpeco
+# source ${ZDOTDIR}/.zshpeco
+# ============================================================
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
