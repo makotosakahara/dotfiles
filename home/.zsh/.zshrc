@@ -56,7 +56,7 @@ source ${ZDOTDIR}/.zshaliases
 # source ${ZDOTDIR}/.zshpeco
 # ============================================================
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ${ZDOTDIR}/.fzf.zsh ] && source ${ZDOTDIR}/.fzf.zsh
 # ============================================================
 # Auto recompile
 if [ ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]; then
