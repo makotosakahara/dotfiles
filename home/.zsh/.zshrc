@@ -12,6 +12,8 @@ PROMPT="$current_dir$user%{$fg[yellow]%}@%{$reset_color%}$host $mark "
 PROMPT2="%_%(!,#,$) "
 SPROMPT="%r is correct? [n,y,a,e]: "
 RPROMPT="%{$fg[cyan]%}%D %*%{$reset_color%}"
+
+eval $(dircolors $HOME/.dir_colors)
 # ============================================================
 # Command History
 HISTFILE=~/.zsh_history
