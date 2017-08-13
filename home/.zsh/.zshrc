@@ -52,9 +52,6 @@ setopt notify
 # Aliases
 source ${ZDOTDIR}/.zshaliases
 # ============================================================
-# peco
-# source ${ZDOTDIR}/.zshpeco
-# ============================================================
 # fzf
 [ -f ${ZDOTDIR}/.fzf.zsh ] && source ${ZDOTDIR}/.fzf.zsh
 # ============================================================
