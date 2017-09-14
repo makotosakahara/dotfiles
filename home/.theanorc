@@ -2,16 +2,14 @@
 [global]
 floatX = float32
 device = cuda0
-allow_gc = True
-optimizer_including = cudnn
-[nvcc]
-fastmath = True
-[lib]
-cnmem = 0.95
+allow_gc = False
+[gpuarray]
+preallocate = 1
+[dnn]
+enabled = auto
 
 # For CPU.
 # [global]
 # floatX = float32
 # device = cpu
 # allow_gc = False
-
