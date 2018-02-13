@@ -12,3 +12,4 @@ case "${OSTYPE}" in
         alias ls="ls --color=auto"
         ;;
 esac
+alias tmux="tmux -u"
