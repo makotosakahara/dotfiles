@@ -1,3 +1,2 @@
-filetype plugin indent on
-syntax enable
-runtime! userautoload/*.vim
+runtime! userautoload/init/*.vim
+runtime! userautoload/plugged.vim
