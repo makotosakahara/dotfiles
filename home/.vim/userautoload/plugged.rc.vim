@@ -20,6 +20,7 @@ Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
 Plug 'w0rp/ale'
+source ~/.vim/userautoload/ale.rc.vim
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
