@@ -17,6 +17,7 @@ endif
 source ~/.vim/userautoload/deoplete.rc.vim
 
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
 Plug 'w0rp/ale'
 
