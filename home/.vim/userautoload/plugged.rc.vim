@@ -16,8 +16,15 @@ else
 endif
 source ~/.vim/userautoload/deoplete.rc.vim
 
+Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+
+Plug 'w0rp/ale'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'itchyny/lightline.vim'
 source ~/.vim/userautoload/lightline.rc.vim
