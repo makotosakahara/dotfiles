@@ -1,3 +1,3 @@
-runtime! userautoload/init/*.vim
-runtime! userautoload/plugged.vim
-runtime! userautoload/plugged/*.vim
+source ~/.vim/userautoload/core.rc.vim
+source ~/.vim/userautoload/mapping.rc.vim
+source ~/.vim/userautoload/plugged.rc.vim
