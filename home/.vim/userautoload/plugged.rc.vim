@@ -25,7 +25,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'joshdick/onedark.vim'
+"Plug 'joshdick/onedark.vim'
+"Plug 'jacoborus/tender.vim'
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -34,5 +36,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 call plug#end()
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
-source ~/.vim/userautoload/onedark.rc.vim
+"source ~/.vim/userautoload/onedark.rc.vim
+"source ~/.vim/userautoload/tender.rc.vim
+source ~/.vim/userautoload/gruvbox.rc.vim
 source ~/.vim/userautoload/lightline.rc.vim
