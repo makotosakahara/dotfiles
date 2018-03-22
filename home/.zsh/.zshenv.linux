@@ -1,5 +1,7 @@
-export EDITOR=nvim
-# pyenv, pyenv-virtualenv
-export PATH="/home/makoto/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if [ -z $TMUX ]; then
+  export EDITOR=nvim
+  # pyenv, pyenv-virtualenv
+  export PATH="/home/makoto/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
