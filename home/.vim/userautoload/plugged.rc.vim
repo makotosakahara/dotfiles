@@ -14,13 +14,10 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-source ~/.vim/userautoload/deoplete.rc.vim
-
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
 Plug 'w0rp/ale'
-source ~/.vim/userautoload/ale.rc.vim
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -28,12 +25,14 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
-source ~/.vim/userautoload/lightline.rc.vim
-"This doesn't work properly.
-"autocmd VimEnter * source ~/.vim/userautoload/lightline.rc.vim
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
 call plug#end()
+source ~/.vim/userautoload/deoplete.rc.vim
+source ~/.vim/userautoload/ale.rc.vim
+source ~/.vim/userautoload/onedark.rc.vim
+source ~/.vim/userautoload/lightline.rc.vim

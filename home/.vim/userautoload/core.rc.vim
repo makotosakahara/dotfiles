@@ -1,5 +1,8 @@
 set encoding=utf-8
 set t_Co=256
+if (has("termguicolors"))
+  set termguicolors
+endif
 set number
 set showmatch
 set wrap
