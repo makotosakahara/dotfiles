@@ -33,5 +33,7 @@ source ~/.vim/userautoload/lightline.rc.vim
 "This doesn't work properly.
 "autocmd VimEnter * source ~/.vim/userautoload/lightline.rc.vim
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+
 call plug#end()
