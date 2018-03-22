@@ -55,7 +55,7 @@ source ${ZDOTDIR}/.zshaliases
 # fzf
 [ -f ${ZDOTDIR}/.fzf.zsh ] && source ${ZDOTDIR}/.fzf.zsh
 # ============================================================
-# Auto recompile
-if [ ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]; then
+# Auto compile
+if [ ! -f ${ZDOTDIR}/.zshrc.zwc -o ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]; then
     zcompile ${ZDOTDIR}/.zshrc
 fi
