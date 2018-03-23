@@ -1,4 +1,4 @@
-"Automatic installation
+" Automatic installation.
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -6,7 +6,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -18,6 +17,9 @@ Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
 Plug 'w0rp/ale'
+
+Plug 'skywind3000/asyncrun.vim', { 'for': 'python' }
+autocmd! User asyncrun.vim source ~/.vim/userautoload/asyncrun.rc.vim
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -31,11 +33,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
-Plug 'skywind3000/asyncrun.vim', { 'for': 'python' }
-autocmd! User asyncrun.vim source ~/.vim/userautoload/asyncrun.rc.vim
-
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
+
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
 source ~/.vim/userautoload/onedark.rc.vim
 source ~/.vim/userautoload/lightline.rc.vim
+source ~/.vim/userautoload/vim-devicons.rc.vim
