@@ -6,6 +6,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -16,23 +19,21 @@ endif
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'w0rp/ale'
 
 Plug 'skywind3000/asyncrun.vim', { 'for': 'python' }
 autocmd! User asyncrun.vim source ~/.vim/userautoload/asyncrun.rc.vim
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-
-Plug 'joshdick/onedark.vim'
-Plug 'itchyny/lightline.vim'
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
+" Always load the vim-devicons as the very last one.
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
