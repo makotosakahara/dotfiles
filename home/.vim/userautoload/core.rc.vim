@@ -32,6 +32,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set noundofile
+set updatetime=100
 "Spell checking except Japanese
 set spelllang+=cjk
 set spell
