@@ -31,6 +31,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
+Plug 'skywind3000/asyncrun.vim', { 'for': 'python' }
+autocmd! User asyncrun.vim source ~/.vim/userautoload/asyncrun.rc.vim
+
 call plug#end()
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
