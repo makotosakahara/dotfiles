@@ -59,3 +59,6 @@ source ${ZDOTDIR}/.zshaliases
 if [ ! -f ${ZDOTDIR}/.zshrc.zwc -o ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]; then
     zcompile ${ZDOTDIR}/.zshrc
 fi
+# ============================================================
+# Autorun tmux.
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
