@@ -1,1 +1,1 @@
-(・8・)＜My dotfiles
+|c||^.- ^||My dotfiles
