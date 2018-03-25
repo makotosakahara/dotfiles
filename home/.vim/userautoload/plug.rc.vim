@@ -33,7 +33,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 
-" FIXME Support True color.
 Plug 'edkolev/tmuxline.vim', { 'on': 'Tmuxline' }
 autocmd! User tmuxline.vim source ~/.vim/userautoload/tmuxline.rc.vim
 

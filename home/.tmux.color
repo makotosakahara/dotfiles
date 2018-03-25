@@ -1,30 +1,36 @@
 # This tmux statusbar config was created by tmuxline.vim
 # on Sun, 25 Mar 2018
 
+# True color.
+black="#282c34"  # colour235
+visual_grey="#3e4452"  # colour236
+white="#aab2bf"  # colour145
+green="#98c379"  # colour114
+
 set -g status-justify "centre"
 set -g status "on"
 set -g status-attr "none"
-set -g message-command-bg "colour236"
+set -g message-command-bg $visual_grey
 set -g status-left-length "100"
-set -g pane-active-border-fg "colour114"
-set -g status-bg "colour235"
-set -g message-command-fg "colour145"
-set -g pane-border-fg "colour236"
-set -g message-bg "colour236"
+set -g pane-active-border-fg $green
+set -g status-bg "$black"
+set -g message-command-fg "$white"
+set -g pane-border-fg $visual_grey
+set -g message-bg $visual_grey
 set -g status-left-attr "none"
 set -g status-right-attr "none"
 set -g status-right-length "100"
-set -g message-fg "colour145"
-setw -g window-status-fg "colour145"
+set -g message-fg "$white"
+setw -g window-status-fg "$white"
 setw -g window-status-attr "none"
-setw -g window-status-activity-bg "colour235"
+setw -g window-status-activity-bg $black
 setw -g window-status-activity-attr "none"
-setw -g window-status-activity-fg "colour114"
+setw -g window-status-activity-fg $green
 setw -g window-status-separator ""
-setw -g window-status-bg "colour235"
-set -g status-left "#[fg=colour235,bg=colour114] #S #[fg=colour114,bg=colour235,nobold,nounderscore,noitalics]"
-set -g status-right "#[fg=colour236,bg=colour235,nobold,nounderscore,noitalics]#[fg=colour145,bg=colour236] #(whoami) #[fg=colour114,bg=colour236,nobold,nounderscore,noitalics]#[fg=colour235,bg=colour114] #H "
-setw -g window-status-format "#[fg=colour235,bg=colour235,nobold,nounderscore,noitalics]#[default] #I  #W #[fg=colour235,bg=colour235,nobold,nounderscore,noitalics]"
-#setw -g window-status-current-format "#[fg=colour235,bg=colour236,nobold,nounderscore,noitalics]#[fg=colour145,bg=colour236] #I  #W #[fg=colour236,bg=colour235,nobold,nounderscore,noitalics]"
+setw -g window-status-bg $black
+set -g status-left "#[fg=$black,bg=$green] #S #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
+set -g status-right "#[fg=$visual_grey,bg=$black,nobold,nounderscore,noitalics]#[fg=$white,bg=$visual_grey] #(whoami) #[fg=$green,bg=$visual_grey,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #H "
+setw -g window-status-format "#[fg=$black,bg=$black,nobold,nounderscore,noitalics]#[default] #I  #W #[fg=$black,bg=$black,nobold,nounderscore,noitalics]"
+#setw -g window-status-current-format "#[fg=$black,bg=$visual_grey,nobold,nounderscore,noitalics]#[fg=$white,bg=$visual_grey] #I  #W #[fg=$visual_grey,bg=$black,nobold,nounderscore,noitalics]"
 # Highlight active window.
-setw -g window-status-current-format "#[fg=colour235,bg=colour114,nobold,nounderscore,noitalics]#[fg=colour235,bg=colour114] #I  #W #[fg=colour114,bg=colour235,nobold,nounderscore,noitalics]"
+setw -g window-status-current-format "#[fg=$black,bg=$green,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #I  #W #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
