@@ -36,6 +36,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
 Plug 'edkolev/tmuxline.vim', { 'on': 'Tmuxline' }
 autocmd! User tmuxline.vim source ~/.vim/userautoload/tmuxline.rc.vim
 
+Plug 'lervag/vimtex', { 'for': 'tex'}
+autocmd! User vimtex source ~/.vim/userautoload/vimtex.rc.vim
+
 " Always load the vim-devicons as the very last one.
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
