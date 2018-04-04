@@ -17,6 +17,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'cohama/lexima.vim'
+Plug 'tyru/caw.vim'
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
@@ -45,6 +46,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 source ~/.vim/userautoload/deoplete.rc.vim
+source ~/.vim/userautoload/caw.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
 source ~/.vim/userautoload/onedark.rc.vim
 source ~/.vim/userautoload/lightline.rc.vim
