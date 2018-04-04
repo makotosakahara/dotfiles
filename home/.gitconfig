@@ -5,3 +5,5 @@
     email = makoto.sakahara@gmail.com
 [core]
     excludesfile = ~/.gitignore
+[url "https://"]
+    insteadOf = git://
