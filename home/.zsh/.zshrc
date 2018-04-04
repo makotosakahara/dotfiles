@@ -60,5 +60,5 @@ if [ ! -f ${ZDOTDIR}/.zshrc.zwc -o ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]
     zcompile ${ZDOTDIR}/.zshrc
 fi
 # ============================================================
-# Autorun tmux.
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+# Restore tmux automatically.
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux a
