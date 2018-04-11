@@ -3,7 +3,7 @@ let g:lightline = {
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'fugitive', 'filename' ] ],
-\    'right': [ [ 'fileformat', 'fileencoding', 'filetype' ],
+\    'right': [ [ 'fileencoding', 'filetype' ],
 \               [ 'lineinfo' ],
 \               [ 'linter_errors', 'linter_warnings' ] ]
 \  },
@@ -11,7 +11,6 @@ let g:lightline = {
 \  'component_function': {
 \    'fugitive': 'LightlineFugitive',
 \    'filename': 'LightlineFilename',
-\    'fileformat': 'LightlineFileformat',
 \    'filetype': 'LightlineFiletype',
 \  },
 \  'component_expand': {
@@ -19,11 +18,9 @@ let g:lightline = {
 \    'linter_errors': 'lightline#ale#errors',
 \  },
 \  'component_type': {
-\    'linter_checking': 'left',
 \    'linter_warnings': 'warning',
-\    'linter_errors': 'error',
-\    'linter_ok': 'left',
-\  },
+\    'linter_errors': 'error'
+\  }
 \}
 " \  'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
 " \  'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
@@ -53,12 +50,12 @@ function! LightlineFugitive()
   return ''
 endfunction
 
-function! LightlineFileformat()
-  return winwidth(0) > 70 ? (&fileformat . '' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
+" function! LightlineFileformat()
+"   return winwidth(0) > 70 ? (&fileformat . '' . WebDevIconsGetFileFormatSymbol()) : ''
+" endfunction
 
 function! LightlineFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . '' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 endfunction
 
 let g:lightline#ale#indicator_warnings = "\uf11a"
