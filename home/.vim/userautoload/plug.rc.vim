@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
 
 Plug 'skywind3000/asyncrun.vim', { 'for': 'python' }
 autocmd! User asyncrun.vim source ~/.vim/userautoload/asyncrun.rc.vim
