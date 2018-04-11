@@ -24,9 +24,9 @@ let g:lightline = {
 \    'linter_errors': 'error',
 \    'linter_ok': 'left',
 \  },
-\  'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
 \}
 " \  'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+" \  'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
 
 function! LightlineModified()
   return &ft =~ 'help\|vimfiler' ? '' : &modified ? '+' : &modifiable ? '' : '-'

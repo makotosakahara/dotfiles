@@ -28,9 +28,8 @@ setw -g window-status-activity-attr "none"
 setw -g window-status-activity-fg $green
 setw -g window-status-separator ""
 setw -g window-status-bg $black
-set -g status-left "#[fg=$black,bg=$green] #S #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
-set -g status-right "#[fg=$visual_grey,bg=$black,nobold,nounderscore,noitalics]#[fg=$white,bg=$visual_grey] #(whoami) #[fg=$green,bg=$visual_grey,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #H "
-setw -g window-status-format "#[fg=$black,bg=$black,nobold,nounderscore,noitalics]#[default] #I  #W #[fg=$black,bg=$black,nobold,nounderscore,noitalics]"
-#setw -g window-status-current-format "#[fg=$black,bg=$visual_grey,nobold,nounderscore,noitalics]#[fg=$white,bg=$visual_grey] #I  #W #[fg=$visual_grey,bg=$black,nobold,nounderscore,noitalics]"
+set -g status-left "#[fg=$black,bg=$green] #S #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
+set -g status-right "#[fg=$visual_grey,bg=$black,nobold,nounderscore,noitalics]#[fg=$white,bg=$visual_grey] #(whoami) #[fg=$green,bg=$visual_grey,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #H "
+setw -g window-status-format "#[fg=$black,bg=$black,nobold,nounderscore,noitalics]#[default] #I|#W #[fg=$black,bg=$black,nobold,nounderscore,noitalics]"
 # Highlight active window.
-setw -g window-status-current-format "#[fg=$black,bg=$green,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #I  #W #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
+setw -g window-status-current-format "#[fg=$black,bg=$green,nobold,nounderscore,noitalics]#[fg=$black,bg=$green] #I|#W #[fg=$green,bg=$black,nobold,nounderscore,noitalics]"
