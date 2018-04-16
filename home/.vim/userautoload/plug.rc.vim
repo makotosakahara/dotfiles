@@ -18,6 +18,8 @@ else
 endif
 Plug 'cohama/lexima.vim'
 Plug 'tyru/caw.vim'
+Plug 'mattn/sonictemplate-vim', { 'for': 'python' }
+autocmd! User sonictemplate-vim source ~/.vim/userautoload/sonictemplate-vim.rc.vim
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
