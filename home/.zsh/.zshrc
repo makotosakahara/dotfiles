@@ -1,64 +1,54 @@
-# ============================================================
-setopt prompt_subst
-autoload colors
-colors
+if [[ ! -d ~/.zplug ]]; then
+  git clone https://github.com/zplug/zplug ~/.zplug
+  source ~/.zplug/init.zsh && zplug update --self
+fi
+source ~/.zplug/init.zsh
 
-local current_dir="%{$fg[magenta]%}[%~]%{$reset_color%}"$'\n'
-local user="%{$fg[green]%}%n%{$reset_color%}"
-local host="%{$fg[blue]%}%m%{$reset_color%}"
-local mark="%{$fg[yellow]%}%(!,#,$)%{$reset_color%}"
+zplug "junegunn/fzf-bin", \
+    from:gh-r, \
+    as:command, \
+    rename-to:fzf
+zplug "junegunn/fzf", use:"shell/completion.zsh"
+zplug "junegunn/fzf", use:"shell/key-bindings.zsh"
 
-PROMPT="$current_dir$user%{$fg[yellow]%}@%{$reset_color%}$host $mark "
-PROMPT2="%_%(!,#,$) "
-SPROMPT="%r is correct? [n,y,a,e]: "
-RPROMPT="%{$fg[cyan]%}%D %*%{$reset_color%}"
+zplug "b4b4r07/enhancd", use:init.sh
+if zplug check b4b4r07/enhancd; then
+    export ENHANCD_FILTER=fzf
+fi
 
-#eval $(dircolors $HOME/.dir_colors)
-# ============================================================
-# Command History
-HISTFILE=~/.zsh_history
-HISTSIZE=4096
-SAVEHIST=4096
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+
+zplug load
+
+HISTFILE=${ZDOTDIR}/.zsh_history
+HISTSIZE=51200
+SAVEHIST=51200
 setopt hist_ignore_dups
 setopt hist_ignore_all_dups
+setopt hist_reduce_blanks
+setopt hist_save_no_dups
+setopt extended_history
 setopt share_history
-setopt append_history
+setopt inc_append_history
 
-autoload history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^N" history-beginning-search-forward-end
-# ============================================================
-# Other Settings
-setopt nobeep
+setopt no_beep
+setopt no_hist_beep
+setopt no_list_beep
 
-# Vim key-bind
+setopt notify
+
 bindkey -v
 
-autoload -U compinit
-compinit
-
-setopt auto_cd
-setopt auto_pushd
-
-setopt correct
-setopt nolistbeep
-
-# Notify background job
-setopt notify
-# ============================================================
 # Aliases
 source ${ZDOTDIR}/.zshaliases
-# ============================================================
-# fzf
-[ -f ${ZDOTDIR}/.fzf.zsh ] && source ${ZDOTDIR}/.fzf.zsh
-# ============================================================
+
 # Auto compile
 if [ ! -f ${ZDOTDIR}/.zshrc.zwc -o ${ZDOTDIR}/.zshrc -nt ${ZDOTDIR}/.zshrc.zwc ]; then
     zcompile ${ZDOTDIR}/.zshrc
 fi
-# ============================================================
+
 # Restore tmux automatically.
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux a

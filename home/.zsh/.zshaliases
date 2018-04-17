@@ -1,15 +1,5 @@
 case "${OSTYPE}" in
-    darwin*)
-        if [[ -d /Applications/MacVim.app ]]; then
-            alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-            alias vi=vim
-        fi
-        alias la="ls -al -G -F"
-        alias ls="ls -G"
-        ;;
     linux*)
-        alias la="ls -al --color=auto -F"
-        alias ls="ls --color=auto"
+        alias la="ls -lAFh --color=auto"
         ;;
 esac
-alias tmux="tmux -u"

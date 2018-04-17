@@ -1,5 +1,0 @@
-export EDITOR=vim
-# Homebrew
-export PATH=/usr/local/bin:$PATH
-# Anaconda3
-export PATH="/Users/makoto/anaconda3/bin:$PATH"
