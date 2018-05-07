@@ -23,7 +23,7 @@ autocmd! User sonictemplate-vim source ~/.vim/userautoload/sonictemplate-vim.rc.
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug '~/.zplug/repos/junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'w0rp/ale'
