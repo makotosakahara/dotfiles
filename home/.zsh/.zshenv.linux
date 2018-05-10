@@ -3,5 +3,7 @@ if [ -z $TMUX ]; then
   export VIRTUAL_ENV_DISABLE_PROMPT=1
   export PATH="$HOME/.pyenv/bin:$PATH"
 fi
+typeset -U PATH
+unset PYTHONPATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

@@ -7,11 +7,16 @@ source ~/.zplug/init.zsh
 zplug "junegunn/fzf-bin", \
     from:gh-r, \
     as:command, \
-    rename-to:fzf
-zplug "junegunn/fzf", use:"shell/completion.zsh"
-zplug "junegunn/fzf", use:"shell/key-bindings.zsh"
+    rename-to:fzf, \
+    if:"[[ $(arch) == *x86_64* ]]"
+zplug "junegunn/fzf", \
+    use:"shell/completion.zsh", \
+    if:"[[ $(arch) == *x86_64* ]]"
+zplug "junegunn/fzf", \
+    use:"shell/key-bindings.zsh", \
+    if:"[[ $(arch) == *x86_64* ]]"
 
-zplug "b4b4r07/enhancd", use:init.sh
+zplug "b4b4r07/enhancd", use:init.sh, if:"[[ $(arch) == *x86_64* ]]"
 if zplug check b4b4r07/enhancd; then
     export ENHANCD_FILTER=fzf
 fi

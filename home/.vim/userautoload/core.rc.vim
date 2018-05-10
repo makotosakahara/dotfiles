@@ -53,5 +53,7 @@ set hlsearch
 filetype plugin indent on
 syntax enable
 "------------------------------
-let g:python_host_prog = $HOME . '/.pyenv/versions/py2/bin/python'
-let g:python3_host_prog = $HOME . '/.pyenv/versions/py3/bin/python'
+" let g:python_host_prog = $HOME . '/.pyenv/versions/py2/bin/python'
+" let g:python3_host_prog = $HOME . '/.pyenv/versions/py3/bin/python'
+let g:python_host_prog = $HOME . '/.pyenv/versions/miniconda2-latest/bin/python'
+let g:python3_host_prog = $HOME . '/.pyenv/versions/miniconda3-latest/bin/python'
