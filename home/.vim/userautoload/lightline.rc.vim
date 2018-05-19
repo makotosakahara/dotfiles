@@ -1,5 +1,5 @@
 let g:lightline = {
-\  'colorscheme': 'onedark',
+\  'colorscheme': 'challenger_deep',
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'fugitive', 'filename' ] ],

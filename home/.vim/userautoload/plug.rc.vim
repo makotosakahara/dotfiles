@@ -6,7 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'itchyny/lightline.vim'
 
 if has('nvim')
@@ -51,6 +51,6 @@ call plug#end()
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/caw.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
-source ~/.vim/userautoload/onedark.rc.vim
+colorscheme challenger_deep
 source ~/.vim/userautoload/lightline.rc.vim
 source ~/.vim/userautoload/vim-devicons.rc.vim
