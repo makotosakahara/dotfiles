@@ -2,14 +2,13 @@ let g:lightline = {
 \  'colorscheme': 'challenger_deep',
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
-\              [ 'fugitive', 'filename' ] ],
+\              [ 'filename' ] ],
 \    'right': [ [ 'fileencoding', 'filetype' ],
 \               [ 'lineinfo' ],
 \               [ 'linter_errors', 'linter_warnings' ] ]
 \  },
 \  'component': { 'lineinfo': "\ue0a1%3l:%-2v" },
 \  'component_function': {
-\    'fugitive': 'LightlineFugitive',
 \    'filename': 'LightlineFilename',
 \    'filetype': 'LightlineFiletype',
 \  },
@@ -41,18 +40,6 @@ function! LightlineFilename()
   \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
   \ ('' != LightlineModified() ? ' ' . LightlineModified() : '')
 endfunction
-
-function! LightlineFugitive()
-  if exists('*fugitive#head')
-    let branch = fugitive#head()
-    return branch !=# '' ? "\ue0a0".branch : ''
-  endif
-  return ''
-endfunction
-
-" function! LightlineFileformat()
-"   return winwidth(0) > 70 ? (&fileformat . '' . WebDevIconsGetFileFormatSymbol()) : ''
-" endfunction
 
 function! LightlineFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
