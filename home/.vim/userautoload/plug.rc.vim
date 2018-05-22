@@ -48,9 +48,10 @@ autocmd! User vimtex source ~/.vim/userautoload/vimtex.rc.vim
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+colorscheme challenger_deep
+
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/caw.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
-colorscheme challenger_deep
 source ~/.vim/userautoload/lightline.rc.vim
 source ~/.vim/userautoload/vim-devicons.rc.vim
