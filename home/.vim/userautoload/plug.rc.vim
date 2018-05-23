@@ -54,4 +54,5 @@ source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/caw.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
 source ~/.vim/userautoload/lightline.rc.vim
+source ~/.vim/userautoload/vim-gitgutter.rc.vim
 source ~/.vim/userautoload/vim-devicons.rc.vim
