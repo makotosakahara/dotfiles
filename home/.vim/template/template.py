@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Author:{{_input_:author}} <{{_input_:email}}>
+# Author:Makoto Sakahara <makoto.sakahara@gmail.com>
 # License:MIT License
