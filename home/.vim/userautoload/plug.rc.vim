@@ -21,6 +21,9 @@ Plug 'tyru/caw.vim'
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 autocmd! User deoplete-jedi source ~/.vim/userautoload/deoplete-jedi.rc.vim
 
+Plug 'jsfaint/gen_tags.vim', { 'for': 'python' }
+autocmd! User gen_tags.vim source ~/.vim/userautoload/gen_tags.rc.vim
+
 Plug '~/.zplug/repos/junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
