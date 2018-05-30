@@ -27,6 +27,8 @@ autocmd! User gen_tags.vim source ~/.vim/userautoload/gen_tags.rc.vim
 Plug '~/.zplug/repos/junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+Plug 'simeji/winresizer'
+
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 
@@ -53,6 +55,7 @@ colorscheme challenger_deep
 
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/caw.rc.vim
+source ~/.vim/userautoload/winresizer.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
 source ~/.vim/userautoload/lightline.rc.vim
 source ~/.vim/userautoload/vim-gitgutter.rc.vim
