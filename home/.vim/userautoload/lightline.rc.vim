@@ -4,10 +4,8 @@ let g:lightline = {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'filename' ] ],
 \    'right': [ [ 'fileencoding', 'filetype' ],
-\               [ 'lineinfo' ],
 \               [ 'linter_errors', 'linter_warnings' ] ]
 \  },
-\  'component': { 'lineinfo': "\ue0a1%3l:%-2v" },
 \  'component_function': {
 \    'filename': 'LightlineFilename',
 \    'filetype': 'LightlineFiletype',
@@ -21,8 +19,6 @@ let g:lightline = {
 \    'linter_errors': 'error'
 \  }
 \}
-" \  'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-" \  'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
 
 function! LightlineModified()
   return &ft =~ 'help\|vimfiler' ? '' : &modified ? '+' : &modifiable ? '' : '-'
