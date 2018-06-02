@@ -1,39 +1,40 @@
 set encoding=utf-8
+set number " Display line numbers.
+set scrolloff=10 " The number of lines above and below the cursor.
+set nostartofline " Keep cursor in the same column.
+set wrap " Word wrapping.
+set backspace=indent,eol,start " Allow backspace.
+set showmatch " Highlight matching parentheses.
+set ignorecase " Case insensitive search.
+set smartcase " Allow case sensitive search.
+set incsearch " Incremental search.
+set hlsearch " Highlight search matches.
+set autoindent
+set expandtab  " Don't use actual tab character.
+set shiftwidth=4
+set tabstop=4
+set updatetime=100
+
+" Enable True color support.
 set t_Co=256
 if (has("termguicolors"))
   set termguicolors
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
-set number
-set showmatch
-set wrap
-set colorcolumn=80
-"Show Invisibles
+" Show Invisibles.
 set list
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
-"Disable beep
+" Disable beep.
 set visualbell
 set t_vb =
 set noerrorbells
-"------------------------------
-"Set working directory to the current file
-autocmd BufEnter * silent! lcd %:p:h
-set autoindent
-set shiftwidth=4
-set tabstop=4
-set expandtab
-"Backspace and delete problems
-set backspace=indent,eol,start
-"Reverse indent
-imap <S-Tab> <Esc><<i
-"Disable back up and swap
+" No backup and swap files.
 set nobackup
 set nowritebackup
 set noswapfile
 set noundofile
-set updatetime=100
-"Spell checking except Japanese
+" Spell checking except Japanese.
 set spelllang+=cjk
 set spell
 hi clear SpellBad
@@ -44,13 +45,10 @@ hi clear SpellRare
 hi SpellRare term=underline cterm=underline
 hi clear SpellLocal
 hi SpellLocal term=underline cterm=underline
-"------------------------------
-set ignorecase
-set smartcase
-set incsearch
-set hlsearch
-"------------------------------
+
+"Set working directory to the current file.
+autocmd BufEnter * silent! lcd %:p:h
+
+let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim/bin/python'
 filetype plugin indent on
 syntax enable
-"------------------------------
-let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim/bin/python'
