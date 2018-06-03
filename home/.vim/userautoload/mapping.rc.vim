@@ -21,5 +21,10 @@ nnoremap <M-j> <C-w>j
 nnoremap <M-k> <C-w>k
 nnoremap <M-h> <C-w>h
 nnoremap <M-l> <C-w>l
-" Unhighlight.
-nnoremap \q :nohlsearch<CR>
+" Unhighlight search matches.
+nnoremap <ESC> <ESC> :nohlsearch<CR>
+
+" Open buffers.
+nnoremap : :Buffers<CR>
+" Delete the current buffer and preserve the current window.
+nnoremap <M-q> :Sayonara!<CR>
