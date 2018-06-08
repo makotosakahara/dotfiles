@@ -26,5 +26,7 @@ nnoremap <ESC> <ESC> :nohlsearch<CR>
 
 " Open buffers.
 nnoremap : :Buffers<CR>
+" Open files.
+nnoremap <M-f> :Files<CR>
 " Delete the current buffer and preserve the current window.
 nnoremap <M-q> :Sayonara!<CR>
