@@ -2,6 +2,7 @@ if [ -z $TMUX ]; then
   export EDITOR=nvim
   export VIRTUAL_ENV_DISABLE_PROMPT=1
   export PATH="$HOME/.pyenv/bin:$PATH"
+  export DISPLAY=localhost:0.0
 fi
 typeset -U PATH
 unset PYTHONPATH
