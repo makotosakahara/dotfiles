@@ -1,1 +1,1 @@
-|c||^.- ^||My dotfiles
+Do your rubesty! ⌒°( ･ω･)°⌒|c||^.- ^||
