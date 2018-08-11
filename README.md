@@ -1,1 +1,1 @@
-Do your rubesty! ⌒°( ･ω･)°⌒|c||^.- ^||
+Do your Rubesty! ⌒°( ･ω･)°⌒||^.- ^||ɔ|
