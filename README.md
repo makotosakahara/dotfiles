@@ -1,1 +1,1 @@
-Do your Rubesty! ⌒°( ･ω･)°⌒||^.- ^||ɔ|
+Enjoy my dotfiles. Do your Rubesty! ⌒°( ･ω･)°⌒||^.- ^||ɔ|
