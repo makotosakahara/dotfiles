@@ -37,6 +37,8 @@ Plug 'cohama/lexima.vim'
 
 Plug 'tyru/caw.vim'
 
+Plug 'Konfekt/FastFold'
+
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
@@ -63,5 +65,6 @@ source ~/.vim/userautoload/winresizer.rc.vim
 source ~/.vim/userautoload/deoplete.rc.vim
 source ~/.vim/userautoload/ale.rc.vim
 source ~/.vim/userautoload/caw.rc.vim
+source ~/.vim/userautoload/fastfold.rc.vim
 source ~/.vim/userautoload/vim-gitgutter.rc.vim
 source ~/.vim/userautoload/vim-devicons.rc.vim

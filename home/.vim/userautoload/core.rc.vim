@@ -10,6 +10,7 @@ set smartcase " Allow case sensitive search.
 set incsearch " Incremental search.
 set hlsearch " Highlight search matches.
 set autoindent
+set foldmethod=indent " Indentation-based folding.
 set expandtab  " Don't use actual tab character.
 set shiftwidth=4
 set tabstop=4
