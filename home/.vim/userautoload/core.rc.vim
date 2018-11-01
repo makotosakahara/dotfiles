@@ -50,6 +50,7 @@ hi SpellLocal term=underline cterm=underline
 "Set working directory to the current file.
 autocmd BufEnter * silent! lcd %:p:h
 
-let g:python3_host_prog = $HOME . '/.pyenv/versions/neovim/bin/python'
+let g:python_host_prog = ''
+let g:python3_host_prog = $PYENV_ROOT . '/versions/miniconda3-latest/bin/python'
 filetype plugin indent on
 syntax enable

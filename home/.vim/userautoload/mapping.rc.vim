@@ -32,3 +32,5 @@ nnoremap : :Buffers<CR>
 nnoremap <M-f> :Files<CR>
 " Delete the current buffer and preserve the current window.
 nnoremap <M-q> :Sayonara!<CR>
+" Resize vim windows.
+nnoremap <C-e> :WinResizerStartResize<CR>
