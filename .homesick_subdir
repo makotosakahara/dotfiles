@@ -1,3 +1,4 @@
-.vim
-.zsh
-.config
+.vim/template
+.vim/userautoload
+.config/nvim
+.config/fish
