@@ -1,5 +1,9 @@
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-. ~/.profile || true
-. ~/.bashrc || true
+if [ -r ~/.profile ]; then
+    . ~/.profile;
+fi
+case "$-" in
+    *i*) if [ -r ~/.bashrc ]; then
+        . ~/.bashrc;
+        fi;;
+    *) return;;
+esac

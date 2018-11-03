@@ -1,4 +1,4 @@
-case $- in
+case "$-" in
     *i*) exec fish;;
     *) return;;
 esac
