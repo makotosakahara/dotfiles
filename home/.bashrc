@@ -1,4 +1,1 @@
-case "$-" in
-    *i*) exec fish;;
-    *) return;;
-esac
+exec fish
