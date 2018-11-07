@@ -33,7 +33,6 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'w0rp/ale'
-source ~/.vim/userautoload/ale.rc.vim
 Plug 'maximbaz/lightline-ale'
 
 Plug 'cohama/lexima.vim'
@@ -66,3 +65,4 @@ Plug 'ryanoasis/vim-devicons'
 source ~/.vim/userautoload/vim-devicons.rc.vim
 call plug#end()
 colorscheme challenger_deep
+source ~/.vim/userautoload/ale.rc.vim
