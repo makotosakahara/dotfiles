@@ -1,1 +1,1 @@
-exec fish
+[ -x "/usr/bin/fish" ] && exec fish
