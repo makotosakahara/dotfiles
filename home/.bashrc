@@ -1,1 +1,4 @@
-[ -x "/usr/bin/fish" ] && exec fish
+case $- in
+    *i*) [ -x "/usr/bin/fish" ] && exec fish;;
+    *) return;;
+esac
