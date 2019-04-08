@@ -2,3 +2,4 @@
 .vim/userautoload
 .config/nvim
 .config/fish
+.config/fish/functions
