@@ -6,13 +6,14 @@ set signcolumn=yes
 " pip install pyls-black pyls-isort
 " npm i -g bash-language-server
 " npm i -g yaml-language-server
-" XXX
-"\ 'python': ['pyls', '-vv', '--log-file', '/tmp/pyls.log'],
 let g:LanguageClient_serverCommands = {
 \   'python': ['pyls'],
 \   'sh': ['bash-language-server', 'start'],
 \   'yaml': ['yaml-language-server', '--stdio']
 \}
+" debugging
+"\ 'python': ['pyls', '-vv', '--log-file', '/tmp/pyls.log'],
+let g:LanguageClient_settingsPath = $HOME . '/.vim/settings.json'
 " XXX
 " let g:ale_echo_cursor = 0
 
