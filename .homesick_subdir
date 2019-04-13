@@ -1,5 +1,4 @@
-.vim/template
-.vim/userautoload
-.config/nvim
+.vim
+.config
 .config/fish
 .config/fish/functions
