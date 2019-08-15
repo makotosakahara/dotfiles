@@ -24,12 +24,14 @@ let g:lightline = {
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'filename' ] ],
-\    'right': [ [ 'fileencoding', 'filetype' ] ]
+\    'right': [ [ 'fileencoding' ], [ 'filetype' ] ]
 \  },
 \  'component_function': {
 \    'filename': 'LightlineFilename',
 \    'filetype': 'LightlineFiletype',
-\  }
+\  },
+\ 'separator': { 'left': "\ue0c4", 'right': "\ue0c5" },
+\ 'subseparator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 \}
 
 function! LightlineModified()
