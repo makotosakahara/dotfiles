@@ -57,6 +57,3 @@ source ~/.vim/userautoload/vim-devicons.rc.vim
 call plug#end()
 
 colorscheme challenger_deep
-" XXX
-hi ALEErrorSign   guibg=#100E23 guifg=#ff8080
-hi ALEWarningSign guibg=#100E23 guifg=#ffe9aa

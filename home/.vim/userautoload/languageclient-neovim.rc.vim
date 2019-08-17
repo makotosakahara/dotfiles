@@ -1,6 +1,14 @@
 set hidden
 set signcolumn=yes
 
+" https://github.com/autozimu/LanguageClient-neovim/issues/569
+let g:LanguageClient_diagnosticsDisplay = {
+\   1: { 'signTexthl': 'Error' },
+\   2: { 'signTexthl': 'Todo' },
+\   3: { 'signTexthl': 'Todo' },
+\   4: { 'signTexthl': 'Todo' },
+\}
+
 " pip install black flake8 isort
 " pip install python-language-server
 " pip install pyls-black pyls-isort
