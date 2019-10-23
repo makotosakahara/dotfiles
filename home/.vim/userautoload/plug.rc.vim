@@ -57,3 +57,5 @@ source ~/.vim/userautoload/vim-devicons.rc.vim
 call plug#end()
 
 colorscheme challenger_deep
+" https://github.com/jwilm/alacritty/issues/1082
+autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
