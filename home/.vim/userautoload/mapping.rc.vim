@@ -24,7 +24,7 @@ nnoremap <M-l> <C-w>l
 " Unhighlight search matches.
 nnoremap <ESC> <ESC> :nohlsearch<CR>
 " Toggle folds.
-nnoremap <space> zA
+nnoremap <leader><space> zA
 
 " Open buffers.
 nnoremap : :Buffers<CR>
