@@ -7,20 +7,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'autozimu/LanguageClient-neovim', {
-\   'branch': 'next',
-\   'do': 'bash install.sh',
-\}
-source ~/.vim/userautoload/languageclient-neovim.rc.vim
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-source ~/.vim/userautoload/deoplete.rc.vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+source ~/.vim/userautoload/coc.rc.vim
 
 Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
