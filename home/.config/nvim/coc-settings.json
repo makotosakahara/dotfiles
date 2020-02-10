@@ -1,10 +1,11 @@
 {
     "diagnostic.virtualText": true,
     "coc.preferences.formatOnSaveFiletypes": ["python"],
-    "diagnostic.errorSign": "✖",
+    "diagnostic.errorSign": "😡",
     "diagnostic.warningSign": "⚠",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "black",
-    "python.sortImports.path": "isort"
+    "python.sortImports.path": "isort",
+    "python.linting.flake8CategorySeverity.F": "Warning"
 }

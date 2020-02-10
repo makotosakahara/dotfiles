@@ -3,7 +3,7 @@ let g:lightline = {
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'filename' ] ],
-\    'right': [ [ 'fileencoding' ], [ 'filetype' ], [ 'coc_error', 'coc_warning' ] ]
+\    'right': [ [ 'fileencoding' ], [ 'filetype' ], [ 'coc_error' , 'coc_warning' ] ]
 \  },
 \  'component_function': {
 \    'filename': 'LightlineFilename',
@@ -17,11 +17,11 @@ let g:lightline = {
 \   'coc_error'        : 'error',
 \   'coc_warning'      : 'warning',
 \  },
-\ 'separator': { 'left': "\ue0c4", 'right': "\ue0c5" },
-\ 'subseparator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 \}
+"\ 'separator': { 'left': "\ue0c4", 'right': "\ue0c5" },
+"\ 'subseparator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 
-let g:coc_status_error_sign = "✖"
+let g:coc_status_error_sign = "😡"
 let g:coc_status_warning_sign = "⚠"
 
 function! s:lightline_coc_diagnostic(kind) abort
