@@ -1,38 +1,47 @@
-" let g:lightline = {
-"\  'colorscheme': 'challenger_deep',
-"\  'active': {
-"\    'left': [ [ 'mode', 'paste' ],
-"\              [ 'filename' ] ],
-"\    'right': [ [ 'fileencoding', 'filetype' ],
-"\               [ 'linter_errors', 'linter_warnings' ] ]
-"\  },
-"\  'component_function': {
-"\    'filename': 'LightlineFilename',
-"\    'filetype': 'LightlineFiletype',
-"\  },
-"\  'component_expand': {
-"\    'linter_warnings': 'lightline#ale#warnings',
-"\    'linter_errors': 'lightline#ale#errors',
-"\  },
-"\  'component_type': {
-"\    'linter_warnings': 'warning',
-"\    'linter_errors': 'error'
-"\  }
-"\}
 let g:lightline = {
 \  'colorscheme': 'challenger_deep',
 \  'active': {
 \    'left': [ [ 'mode', 'paste' ],
 \              [ 'filename' ] ],
-\    'right': [ [ 'fileencoding' ], [ 'filetype' ] ]
+\    'right': [ [ 'fileencoding' ], [ 'filetype' ], [ 'coc_error', 'coc_warning' ] ]
 \  },
 \  'component_function': {
 \    'filename': 'LightlineFilename',
 \    'filetype': 'LightlineFiletype',
 \  },
+\ 'component_expand': {
+\   'coc_error'        : 'LightlineCocErrors',
+\   'coc_warning'      : 'LightlineCocWarnings',
+\ },
+\ 'component_type': {
+\   'coc_error'        : 'error',
+\   'coc_warning'      : 'warning',
+\  },
 \ 'separator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 \ 'subseparator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 \}
+
+let g:coc_status_error_sign = "✖"
+let g:coc_status_warning_sign = "⚠"
+
+function! s:lightline_coc_diagnostic(kind) abort
+  let info = get(b:, 'coc_diagnostic_info', 0)
+  if empty(info) || get(info, a:kind, 0) == 0
+    return ''
+  endif
+  let sign = get(g:, 'coc_status_' . a:kind . '_sign', '')
+  return printf('%s %d', sign, info[a:kind])
+endfunction
+
+function! LightlineCocErrors() abort
+  return s:lightline_coc_diagnostic('error')
+endfunction
+
+function! LightlineCocWarnings() abort
+  return s:lightline_coc_diagnostic('warning')
+endfunction
+
+autocmd User CocDiagnosticChange call lightline#update()
 
 function! LightlineModified()
   return &ft =~ 'help\|vimfiler' ? '' : &modified ? '+' : &modifiable ? '' : '-'
@@ -54,9 +63,6 @@ endfunction
 function! LightlineFiletype()
   return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 endfunction
-
-" let g:lightline#ale#indicator_warnings = "\uf11a"
-" let g:lightline#ale#indicator_errors = "\uf119"
 
 set laststatus=2
 set noshowmode
