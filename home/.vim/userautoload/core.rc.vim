@@ -51,4 +51,4 @@ hi SpellLocal term=underline cterm=underline
 autocmd BufEnter * silent! lcd %:p:h
 
 let g:python_host_prog = ''
-let g:python3_host_prog = $PYENV_ROOT . '/versions/miniconda3-latest/bin/python'
+let g:python3_host_prog = $CONDA_PYTHON_EXE
