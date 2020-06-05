@@ -11,6 +11,9 @@ fi
 unset __conda_setup
 
 case $- in
-   *i*) [ -x "$HOME/miniconda3/bin/xonsh" ] && exec xonsh;;
-   *) return;;
+    *i*)
+        if type "xonsh" > /dev/null 2>&1
+        then exec xonsh
+        fi;;
+    *) return;;
 esac
