@@ -1,4 +1,4 @@
 $PROMPT = '{INTENSE_RED}{user}{NO_COLOR} at {INTENSE_PURPLE}{hostname}{NO_COLOR} in {BOLD_GREEN}{cwd}{NO_COLOR}\n↪ '
 
-aliases["l"] = "ls -lAFh --color=auto"
+aliases["la"] = "ls -lAFh --color=auto"
 aliases["v"] = "nvim"
