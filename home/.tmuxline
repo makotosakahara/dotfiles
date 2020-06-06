@@ -1,23 +1,23 @@
 # This tmux statusbar config was created by tmuxline.vim
-# on Thu, 15 Aug 2019
+# on Sat, 06 Jun 2020
 
 set -g status-justify "centre"
 set -g status "on"
 set -g status-left-style "none"
-set -g message-command-style "fg=colour8,bg=colour14"
+set -g message-command-style "fg=colour8,bg=colour13"
 set -g status-right-style "none"
-set -g pane-active-border-style "fg=colour6"
+set -g pane-active-border-style "fg=colour5"
 set -g status-style "none,bg=colour8"
-set -g message-style "fg=colour8,bg=colour14"
-# set -g pane-border-style "fg=colour14"
+set -g message-style "fg=colour8,bg=colour13"
+# set -g pane-border-style "fg=colour13"
 # XXX
 set -g pane-border-style "fg=colour8"
 set -g status-right-length "100"
 set -g status-left-length "100"
-setw -g window-status-activity-style "none,fg=colour6,bg=colour8"
+setw -g window-status-activity-style "none,fg=colour5,bg=colour8"
 setw -g window-status-separator ""
 setw -g window-status-style "none,fg=colour15,bg=colour8"
-set -g status-left "#[fg=colour8,bg=colour6] #S #[fg=colour6,bg=colour8,nobold,nounderscore,noitalics]"
-set -g status-right "#[fg=colour14,bg=colour8,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour14] #(whoami) #[fg=colour6,bg=colour14,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour6] #H "
-setw -g window-status-format "#[fg=colour8,bg=colour8,nobold,nounderscore,noitalics]#[default] #W #[fg=colour8,bg=colour8,nobold,nounderscore,noitalics]"
-setw -g window-status-current-format "#[fg=colour8,bg=colour14,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour14] #W #[fg=colour14,bg=colour8,nobold,nounderscore,noitalics]"
+set -g status-left "#[fg=colour8,bg=colour5] #S #[fg=colour5,bg=colour8,nobold,nounderscore,noitalics]"
+set -g status-right "#[fg=colour13,bg=colour8,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour13] #(whoami) #[fg=colour5,bg=colour13,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour5] #H "
+setw -g window-status-format "#[fg=colour8,bg=colour8,nobold,nounderscore,noitalics]#[default] #W #[fg=colour8,bg=colour8,nobold,nounderscore,noitalics]"
+setw -g window-status-current-format "#[fg=colour8,bg=colour13,nobold,nounderscore,noitalics]#[fg=colour8,bg=colour13] #W #[fg=colour13,bg=colour8,nobold,nounderscore,noitalics]"
