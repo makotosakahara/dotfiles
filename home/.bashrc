@@ -12,8 +12,8 @@ unset __conda_setup
 
 case $- in
     *i*)
-        if type "xonsh" > /dev/null 2>&1
-        then exec xonsh
+        if type "fish" > /dev/null 2>&1
+        then exec fish
         fi;;
     *) return;;
 esac
