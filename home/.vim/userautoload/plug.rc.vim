@@ -45,13 +45,5 @@ source ~/.vim/userautoload/vim-devicons.rc.vim
 call plug#end()
 
 colorscheme challenger_deep
-" https://github.com/jwilm/alacritty/issues/1082
-" autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
 
-hi link CocErrorSign Error
-hi link CocWarningSign TODO
-hi link CocInfoSign LineNr
-
-let s:p = g:lightline#colorscheme#challenger_deep#palette
-let s:p.normal.error = [["#ff5458", "#100E23", "9", "8"]]
-let s:p.normal.warning = [["#ffb378", "#100E23", "11", 8]]
+source ~/.vim/userautoload/postprocessing.rc.vim
