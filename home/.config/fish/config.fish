@@ -6,3 +6,5 @@ set fish_color_end 63f2f1             # dark cyan
 set fish_color_command 65b2ff         # dark_blue
 set fish_color_param 91ddff           # blue
 set fish_color_operator aaffe4        # cyan
+
+eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
