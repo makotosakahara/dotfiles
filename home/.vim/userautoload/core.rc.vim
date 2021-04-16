@@ -51,4 +51,4 @@ hi SpellLocal term=underline cterm=underline
 autocmd BufEnter * silent! lcd %:p:h
 
 let g:python_host_prog = ''
-let g:python3_host_prog = system("which python")
+let g:python3_host_prog = system("which python")[:-2]
