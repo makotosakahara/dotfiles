@@ -1,3 +1,6 @@
+" https://github.com/alacritty/alacritty/issues/1082#issuecomment-366948045
+autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
+
 let s:p = g:lightline#colorscheme#challenger_deep#palette
 
 let s:asphalt_subtle= { "gui": "#100E23", "cterm": "232", "cterm16": "8"}

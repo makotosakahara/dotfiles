@@ -1,0 +1,62 @@
+font:
+    normal:
+        family: Hack NF
+    bold:
+        family: Hack NF
+    italic:
+        family: Hack NF
+    size: 14
+    offset:
+        x: 0
+        y: 1
+    glyph_offset:
+        x: 0
+        y: 1
+
+draw_bold_text_with_bright_colors: true
+
+# Challenger Deep
+colors:
+    # Default colors
+    primary:
+        background: '0x1b182c'
+        foreground: '0xcbe3e7'
+    # Normal colors
+    normal:
+        black:   '0x100e23'
+        red:     '0xff8080'
+        green:   '0x95ffa4'
+        yellow:  '0xffe9aa'
+        blue:    '0x91ddff'
+        magenta: '0xc991e1'
+        cyan:    '0xaaffe4'
+        white:   '0xcbe3e7'
+    # Bright colors
+    bright:
+        # black:   '0x565575'
+        # NOTE (medium_gray)
+        black:   '0x767676'
+        red:     '0xff5458'
+        green:   '0x62d196'
+        yellow:  '0xffb378'
+        blue:    '0x65b2ff'
+        magenta: '0x906cff'
+        cyan:    '0x63f2f1'
+        white:   '0xa6b3cc'
+    cursor:
+        text:   '0x100e23'
+        cursor: '0xfbfcfc'
+
+background_opacity: 0.9
+
+selection:
+    save_to_clipboard: true
+
+cursor:
+    style:
+        shape: Beam
+        blinking: On
+    unfocused_hollow: false
+
+shell:
+    program: "C:\\Windows\\System32\\bash.exe ~ -l"
