@@ -3,5 +3,6 @@
     "diagnostic.errorSign": "☠",
     "diagnostic.warningSign": "🤢",
     "diagnostic.hintSign": "😑",
+    "python.formatting.provider": "black",
     "yaml.format.enable": true
 }
