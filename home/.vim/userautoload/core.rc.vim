@@ -15,6 +15,7 @@ set expandtab  " Don't use actual tab character.
 set shiftwidth=4
 set tabstop=4
 set updatetime=100
+set guicursor=  " Don't change the cursor shape
 
 " Enable True color support.
 set t_Co=256
