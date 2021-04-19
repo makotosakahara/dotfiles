@@ -23,7 +23,7 @@ let g:lightline = {
 "\ 'separator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 "\ 'subseparator': { 'left': "\ue0c4", 'right': "\ue0c5" },
 
-let g:coc_status_error_sign = "☠"
+let g:coc_status_error_sign = "🤪"
 let g:coc_status_warning_sign = "🤢"
 let g:coc_status_hint_sign = "😑"
 

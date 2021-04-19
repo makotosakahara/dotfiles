@@ -1,6 +1,6 @@
 {
     "coc.preferences.formatOnSaveFiletypes": ["python"],
-    "diagnostic.errorSign": "☠",
+    "diagnostic.errorSign": "🤪",
     "diagnostic.warningSign": "🤢",
     "diagnostic.hintSign": "😑",
     "python.formatting.provider": "black",
