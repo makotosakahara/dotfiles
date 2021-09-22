@@ -1,10 +1,11 @@
 set fish_greeting
 
-set fish_color_autosuggestion 767677  # medium_gray
-set fish_color_error ff5458           # dark_red
-set fish_color_end 63f2f1             # dark cyan
-set fish_color_command 65b2ff         # dark_blue
-set fish_color_param 91ddff           # blue
-set fish_color_operator aaffe4        # cyan
+# Tokyo Night
+set fish_color_autosuggestion 565f89    # Comments
+set fish_color_error f7768e             # Terminal Red
+set fish_color_end 7dcfff               # Terminal Cyan
+set fish_color_command 7aa2f7           # Terminal Blue
+set fish_color_param 7aa2f7             # Terminal Blue
+set fish_color_operator 7dcfff          # Terminal Cyan
 
 eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
