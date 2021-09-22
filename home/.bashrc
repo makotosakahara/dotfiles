@@ -10,6 +10,13 @@ else
 fi
 unset __conda_setup
 
+# Remove background colors
+if type "dircolors" > /dev/null 2>&1
+    then eval "$(dircolors -p | \
+        sed 's/ 4[0-9];/ 01;/; s/;4[0-9];/;01;/g; s/;4[0-9] /;01 /' | \
+        dircolors /dev/stdin)"
+fi
+
 case $- in
     *i*)
         if type "fish" > /dev/null 2>&1
