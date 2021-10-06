@@ -13,5 +13,3 @@ nnoremap j gj
 nnoremap gj j
 nnoremap <Down> gj
 nnoremap <Up> gk
-
-nnoremap <silent> <Leader>p <Cmd>call VSCodeNotify('python.execInTerminal')<CR>
