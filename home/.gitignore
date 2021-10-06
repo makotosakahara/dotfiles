@@ -1,2 +1,11 @@
-.DS_Store
+# Python
 __pycache__/
+# LaTeX
+*.aux
+*.dvi
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.log
+# Mac
+.DS_Store
