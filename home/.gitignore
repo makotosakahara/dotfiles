@@ -7,5 +7,10 @@ __pycache__/
 *.fdb_latexmk
 *.fls
 *.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
 # Mac
 .DS_Store
