@@ -5,6 +5,6 @@
     email = makoto.sakahara@gmail.com
 [core]
     excludesfile = ~/.gitignore
-	editor = vim
+    editor = nvim
 [url "https://"]
     insteadOf = git://
