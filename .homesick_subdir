@@ -1,4 +1,6 @@
 .vim
 .config
+.config/nvim
 .config/fish
 .config/fish/functions
+.config/matplotlib
