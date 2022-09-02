@@ -6,7 +6,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'ggandor/lightspeed.nvim'
-" highlight LightspeedCursor cterm=reverse gui=reverse
+Plug 'ggandor/lightspeed.nvim'
+highlight LightspeedCursor gui=reverse
 
 call plug#end()
