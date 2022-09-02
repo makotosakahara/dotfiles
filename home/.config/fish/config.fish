@@ -35,4 +35,6 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 
+alias ls="lsd"
+
 eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
