@@ -12,7 +12,9 @@ endfunction
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-repeat'
 Plug 'ggandor/lightspeed.nvim'
+
 Plug 'folke/tokyonight.nvim', Cond(!exists('g:vscode'))
 
 call plug#end()
