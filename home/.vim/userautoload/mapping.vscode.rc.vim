@@ -6,5 +6,5 @@ nmap j gj
 nmap <Up> gk
 nmap <Down> gj
 
-# Folding
+" Folding
 nnoremap za :call VSCodeNotify('editor.toggleFold')<CR>
