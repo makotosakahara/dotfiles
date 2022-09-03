@@ -1,15 +1,7 @@
-let mapleader = "\<Space>"
-
-" Use colon instead of semicolon.
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
-
 " Move cursor by display lines when wrapping.
-nnoremap k gk
-nnoremap gk k
-nnoremap j gj
-nnoremap gj j
-nnoremap <Down> gj
-nnoremap <Up> gk
+" https://github.com/vscode-neovim/vscode-neovim/issues/58
+" https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-630551787
+nmap k gk
+nmap j gj
+nmap <Up> gk
+nmap <Down> gj
