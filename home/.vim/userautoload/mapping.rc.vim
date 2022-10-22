@@ -5,3 +5,6 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+
+" Exit from insert mode.
+inoremap <C-k> <Esc>
