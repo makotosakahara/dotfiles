@@ -1,7 +1,7 @@
 " Japanese IME
-if executable('zenhan')
+if executable('zenhan.exe')
     augroup zenhan
         autocmd!
-        au InsertLeave * :call system('zenhan 0')
+        au InsertLeave * :call system('zenhan.exe 0')
     augroup END
 endif
