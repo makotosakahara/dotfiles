@@ -1,0 +1,5 @@
+[user]
+    name = makotosakahara
+    email = makoto.sakahara@gmail.com
+[core]
+    editor = nvim
