@@ -17,11 +17,5 @@ abbr --add l lsd -la
 abbr --add lt lsd --tree
 functions --erase la ll
 
-set path $HOME/.local/share/nvim/lazy/tokyonight.nvim/extras/fish/tokyonight_moon.fish
-if test -f $path
-    . $path
-end
-set --erase path
-
 zoxide init fish | source
 starship init fish | source
