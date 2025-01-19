@@ -12,9 +12,10 @@ else
 end
 set --erase path
 
-abbr --add l lsd
-abbr --add ll lsd -la
+abbr --add ls lsd
+abbr --add l lsd -la
 abbr --add lt lsd --tree
+functions --erase la ll
 
 set path $HOME/.local/share/nvim/lazy/tokyonight.nvim/extras/fish/tokyonight_moon.fish
 if test -f $path
