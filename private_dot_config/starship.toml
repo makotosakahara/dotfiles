@@ -1,0 +1,6 @@
+[python]
+# Assumes uv-managed projects.
+python_binary = [["uv", "run", "--managed-python", "--no-python-downloads", "--no-sync", "python"]]
+detect_extensions = []
+detect_files = [".python-version", "pyproject.toml", "uv.lock"]
+detect_folders = [".venv"]
