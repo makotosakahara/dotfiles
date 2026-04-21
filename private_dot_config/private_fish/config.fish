@@ -1,5 +1,7 @@
 set -U fish_greeting
 
+fish_config theme choose catppuccin-mocha --color-theme=dark
+
 abbr --add ls lsd
 abbr --add l lsd -la
 abbr --add lt lsd --tree
