@@ -23,7 +23,25 @@ config.force_reverse_video_cursor = true
 config.color_scheme = "Catppuccin Mocha"
 
 -- Font
-config.font = wezterm.font("Hack Nerd Font Mono")
+config.font = wezterm.font({
+	family = "Moralerspace Neon",
+	-- Enable texture healing and code ligatures.
+	-- https://monaspace.githubnext.com/#code-ligatures
+	harfbuzz_features = {
+		"calt",
+		"ss01",
+		"ss02",
+		"ss03",
+		"ss04",
+		"ss05",
+		"ss06",
+		"ss07",
+		"ss08",
+		"ss09",
+		"ss10",
+		"liga",
+	},
+})
 config.font_size = 16
 
 return config
