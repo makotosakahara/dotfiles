@@ -1,0 +1,4 @@
+git:
+  pagers:
+    - pager: delta --paging=never
+        --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"

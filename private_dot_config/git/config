@@ -1,5 +1,17 @@
 [user]
     name = makotosakahara
     email = makoto.sakahara@gmail.com
+
 [core]
     editor = nvim
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    line-numbers = true
+    hyperlinks = true
+
+[merge]
+    conflictStyle = zdiff3
