@@ -1,3 +1,8 @@
+[".config/eza/theme.yml"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/catppuccin/eza/main/themes/mocha/catppuccin-mocha-mauve.yml"
+    refreshPeriod = "168h"
+
 [".config/delta/themes/catppuccin.gitconfig"]
     type = "file"
     url = "https://raw.githubusercontent.com/catppuccin/delta/main/catppuccin.gitconfig"
