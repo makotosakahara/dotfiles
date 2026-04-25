@@ -10,3 +10,5 @@ opt.shiftwidth = 4
 -- default "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:block-blinkon500-blinkoff500-TermCursor"
 -- XXX: Blink times seem to be ignored. The blinking configurations are dependent on the terminal ones.
 opt.guicursor = "n-v-sm:block,i-ci-ve-c-t:ver25-blinkon500-blinkoff500,r-cr-o:hor20"
+
+vim.g.lazyvim_python_lsp = "ty"
