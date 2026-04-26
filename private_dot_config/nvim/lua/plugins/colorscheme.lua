@@ -1,10 +1,11 @@
 return {
   {
+    -- https://www.lazyvim.org/plugins/colorscheme#catppuccin
     "catppuccin",
     opts = {
       flavour = "mocha",
       -- Follow the folke/tokyonight.nvim default options.
-      -- https://github.com/folke/tokyonight.nvim?tab=readme-ov-file#%EF%B8%8F-configuration.
+      -- https://github.com/folke/tokyonight.nvim?tab=readme-ov-file#%EF%B8%8F-configuration
       term_colors = true,
       styles = {
         conditionals = {},
@@ -15,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-nvim",
     },
   },
 }
