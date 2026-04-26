@@ -7,7 +7,7 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
--- Start terminal-mode (https://neovim.io/doc/user/intro.html#Terminal-mode) automatically.
+-- Automatically enter insert mode in terminal buffers.
 vim.api.nvim_create_autocmd({ "TermOpen", "BufEnter" }, {
   pattern = "term://*",
   command = "startinsert",

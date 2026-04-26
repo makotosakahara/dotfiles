@@ -4,10 +4,11 @@
 
 local keymap = vim.keymap
 
--- Ergonomic command-line mode.
+-- Ergonomic Ex commands.
 keymap.set({ "n", "v" }, ";", ":")
 keymap.set({ "n", "v" }, ":", ";")
 
--- https://neovim.io/doc/user/terminal.html#terminal-input.
+-- Exit terminal mode.
 keymap.set("t", "<Esc>", [[<C-\><C-n>]])
+-- Allow window commands from terminal mode.
 keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])

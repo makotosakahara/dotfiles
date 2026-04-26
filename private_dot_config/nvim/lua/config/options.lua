@@ -6,9 +6,9 @@ local opt = vim.opt
 
 opt.shiftwidth = 4
 
--- https://neovim.io/doc/user/options.html#'guicursor'
--- default "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,t:block-blinkon500-blinkoff500-TermCursor"
--- XXX: Blink times seem to be ignored. The blinking configurations are dependent on the terminal ones.
-opt.guicursor = "n-v-sm:block,i-ci-ve-c-t:ver25-blinkon500-blinkoff500,r-cr-o:hor20"
+-- Use a blinking bar cursor in insert, command-line, and terminal modes.
+-- Omit a cursor highlight group to use the host terminal's default cursor colors.
+-- See https://neovim.io/doc/user/options/#'guicursor' for details.
+opt.guicursor = "n-v-sm:block,i-c-ci-t-ve:ver25-blinkon500-blinkoff500,r-cr-o:hor20"
 
 vim.g.lazyvim_python_lsp = "ty"
