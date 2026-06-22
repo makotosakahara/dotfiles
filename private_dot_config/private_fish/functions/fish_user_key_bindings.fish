@@ -1,5 +1,5 @@
 function fish_user_key_bindings
-    # Emacs-style only in insert mode, by design.
+    # Emacs-style only in Insert mode, by design.
     fish_default_key_bindings -M insert
     fish_vi_key_bindings --no-erase
 
